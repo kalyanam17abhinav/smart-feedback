@@ -1,0 +1,10 @@
+project_id = "cjijfvnudhoycsmshtjc"
+
+[functions.analyze-feedback]
+verify_jwt = false
+
+[functions.get-analytics]
+verify_jwt = false
+
+[functions.get-user-feedback]
+verify_jwt = true
