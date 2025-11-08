@@ -1,42 +1,38 @@
 # Dependencies
 node_modules/
 */node_modules/
+package-lock.json
+*/package-lock.json
 
 # Build outputs
 dist/
-dist-ssr/
 build/
 *.local
 
 # Environment files
 .env
-.env.local
-.env.production
-.env.development
-*.env
+.env.*
+!.env.example
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+server/feedback.db
 
 # Logs
 logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
-
-# Supabase temp files
-backend/supabase/.temp/
-.temp/
 
 # OS files
 .DS_Store
-.DS_Store?
 Thumbs.db
-ehthumbs.db
 
 # Editor directories and files
-.vscode/*
-!.vscode/extensions.json
+.vscode/
 .idea/
 *.suo
 *.ntvs*
@@ -47,11 +43,8 @@ ehthumbs.db
 # Cache directories
 .cache/
 .parcel-cache/
-.next/
-.nuxt/
-.vuepress/dist/
 
-# Coverage directory used by tools like istanbul
+# Coverage directory
 coverage/
 *.lcov
 
@@ -60,3 +53,15 @@ pids/
 *.pid
 *.seed
 *.pid.lock
+
+# Temporary files
+*.tmp
+*.temp
+
+# Documentation (keep only README.md)
+*.md
+!README.md
+
+# Batch files (setup scripts)
+*.bat
+!start-project.bat

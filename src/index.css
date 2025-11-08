@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 25% 87%; /* #B2C5DC */
+    --foreground: 210 45% 8%; /* #05080E */
+    --card: 0 0% 100%;
+    --card-foreground: 210 45% 8%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 45% 8%;
+    --primary: 210 35% 50%; /* #5577A9 */
+    --primary-foreground: 0 0% 98%;
+    --secondary: 210 30% 70%; /* #98B6D9 */
+    --secondary-foreground: 210 45% 8%;
+    --muted: 210 25% 87%;
+    --muted-foreground: 210 35% 50%;
+    --accent: 210 30% 70%;
+    --accent-foreground: 210 45% 8%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 30% 70%;
+    --input: 0 0% 100%;
+    --ring: 210 35% 50%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 210 45% 8%;
+    --sidebar-primary: 210 35% 50%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 210 30% 70%;
+    --sidebar-accent-foreground: 210 45% 8%;
+    --sidebar-border: 210 30% 70%;
+    --sidebar-ring: 210 35% 50%;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+    --warning: 32 95% 44%;
+    --warning-foreground: 0 0% 98%;
+    --positive: 142 76% 36%;
+    --neutral: 210 35% 50%;
+    --negative: 0 84% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .glass-effect {
+    @apply backdrop-blur-sm bg-white/80 border border-[#98B6D9];
+  }
+  
+  .primary-gradient {
+    background: linear-gradient(135deg, #5577A9 0%, #98B6D9 100%);
+  }
+  
+  .text-gradient {
+    @apply text-[#05080E];
+  }
+}
