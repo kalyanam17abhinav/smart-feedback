@@ -31,7 +31,7 @@ const Home = () => {
               </span>
               <br />
               <span className="text-[#5577A9]">
-                & AI Analysis
+                & Analysis
               </span>
             </motion.h1>
             
